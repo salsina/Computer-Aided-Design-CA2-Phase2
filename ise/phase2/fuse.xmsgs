@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"E:/Courses/CAD/Project2/phase2/controller.v" Line 30: Parameter declaration becomes local in <arg fmt="%s" index="1">controller</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"E:/Courses/CAD/Project2/phase2/main_controller.v" Line 31: Parameter declaration becomes local in <arg fmt="%s" index="1">main_controller</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="329" delta="unknown" >"E:/Courses/CAD/Project2/phase2/ten_neurons.v" Line 47: Target &lt;<arg fmt="%s" index="1">ready</arg>&gt; of concurrent assignment or output port connection should be a net type.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="329" delta="unknown" >"E:/Courses/CAD/Project2/phase2/ten_neurons_outputlayer.v" Line 56: Target &lt;<arg fmt="%s" index="1">ready</arg>&gt; of concurrent assignment or output port connection should be a net type.
+</msg>
+
+</messages>
+

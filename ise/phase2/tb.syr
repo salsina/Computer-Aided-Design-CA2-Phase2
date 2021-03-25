@@ -1,0 +1,166 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: tb.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "tb.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "tb"
+Output Format                      : NGC
+Target Device                      : xa7a100t-2I-csg324
+
+---- Source Options
+Top Module Name                    : tb
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\Courses\CAD\Project2\phase2\Reg15.v" into library work
+Parsing module <Reg15>.
+Analyzing Verilog file "E:\Courses\CAD\Project2\phase2\Mult.v" into library work
+Parsing module <Mult>.
+Analyzing Verilog file "E:\Courses\CAD\Project2\phase2\Adder.v" into library work
+Parsing module <Adder>.
+Analyzing Verilog file "E:\Courses\CAD\Project2\phase2\MAC2.v" into library work
+Parsing module <MAC2>.
+Analyzing Verilog file "E:\Courses\CAD\Project2\phase2\InputSelection.v" into library work
+Parsing module <InputSelection>.
+Analyzing Verilog file "E:\Courses\CAD\Project2\phase2\DataPath.v" into library work
+Parsing module <DataPath>.
+Analyzing Verilog file "E:\Courses\CAD\Project2\phase2\controller.v" into library work
+Parsing module <controller>.
+INFO:HDLCompiler:693 - "E:\Courses\CAD\Project2\phase2\controller.v" Line 30. parameter declaration becomes local in controller with formal parameter declaration list
+Analyzing Verilog file "E:\Courses\CAD\Project2\phase2\saturation.v" into library work
+Parsing module <saturation>.
+Analyzing Verilog file "E:\Courses\CAD\Project2\phase2\ANN.v" into library work
+Parsing module <ANN>.
+Analyzing Verilog file "E:\Courses\CAD\Project2\phase2\ActivationFunction.v" into library work
+Parsing module <ActivationFunction>.
+Analyzing Verilog file "E:\Courses\CAD\Project2\phase2\ten_neurons_outputlayer.v" into library work
+Parsing module <ten_neurons_outputlayer>.
+Analyzing Verilog file "E:\Courses\CAD\Project2\phase2\ten_neurons.v" into library work
+Parsing module <ten_neurons>.
+Analyzing Verilog file "E:\Courses\CAD\Project2\phase2\output_layer.v" into library work
+Parsing module <output_layer>.
+Analyzing Verilog file "E:\Courses\CAD\Project2\phase2\main_controller.v" into library work
+Parsing module <main_controller>.
+INFO:HDLCompiler:693 - "E:\Courses\CAD\Project2\phase2\main_controller.v" Line 31. parameter declaration becomes local in main_controller with formal parameter declaration list
+Analyzing Verilog file "E:\Courses\CAD\Project2\phase2\InputSelector.v" into library work
+Parsing module <InputSelector>.
+Analyzing Verilog file "E:\Courses\CAD\Project2\phase2\hidden_layer.v" into library work
+Parsing module <hidden_layer>.
+Analyzing Verilog file "E:\Courses\CAD\Project2\phase2\TOP.v" into library work
+Parsing module <TOP>.
+Analyzing Verilog file "E:\Courses\CAD\Project2\phase2\tb.v" into library work
+Parsing module <tb>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <tb>.
+WARNING:HDLCompiler:872 - "E:\Courses\CAD\Project2\phase2\tb.v" Line 31: Using initial value of clk since it is never assigned
+
+Elaborating module <TOP>.
+
+Elaborating module <main_controller>.
+WARNING:HDLCompiler:91 - "E:\Courses\CAD\Project2\phase2\main_controller.v" Line 53: Signal <start> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\Courses\CAD\Project2\phase2\main_controller.v" Line 57: Signal <input_count> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\Courses\CAD\Project2\phase2\main_controller.v" Line 62: Signal <input_count> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\Courses\CAD\Project2\phase2\main_controller.v" Line 64: Signal <input_count> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\Courses\CAD\Project2\phase2\main_controller.v" Line 89: Signal <hidden_ready1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\Courses\CAD\Project2\phase2\main_controller.v" Line 98: Signal <hidden_ready2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "E:\Courses\CAD\Project2\phase2\main_controller.v" Line 107: Signal <out_ready> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+
+Elaborating module <InputSelector>.
+Reading initialization file \"test_data_sm.dat\".
